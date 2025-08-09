@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>xec Scripts - Roblox Script Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1f2235, #12141f);
+      color: #e1e3e8;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 3rem 1rem;
+    }
+
+    .container {
+      background: #181b2a;
+      border-radius: 16px;
+      width: 100%;
+      max-width: 450px;
+      box-shadow: 0 15px 30px rgba(17, 19, 38, 0.7);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    /* Branding Header */
+    .logo {
+      font-size: 2.8rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #5561ff, #1dd1a1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.25rem;
+      letter-spacing: 0.12em;
+      user-select: none;
+      cursor: default;
+    }
+
+    .tagline {
+      font-weight: 500;
+      font-size: 1.05rem;
+      color: #94a1b2;
+      margin-bottom: 2rem;
+      user-select: none;
+    }
+
+    /* Script button row */
+    .script-row {
+      display: flex;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+      transition: box-shadow 0.3s ease;
+      background: #22253a;
+    }
+
+    .script-row:hover {
+      box-shadow: 0 8px 15px rgba(29, 209, 161, 0.6);
+    }
+
+    a.script-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #e1e3e8;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 1rem 1.5rem;
+      background: #2b2f4a;
+      border-right: 1px solid #1dd1a1;
+      user-select: none;
+      transition: background-color 0.25s ease;
+    }
+    a.script-btn:hover {
+      background: #1dd1a1;
+      color: #12141f;
+    }
+
+    button.copy-btn {
+      background: #1dd1a1;
+      border: none;
+      padding: 1rem 1.4rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #12141f;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.25s ease;
+      position: relative;
+    }
+
+    button.copy-btn:hover {
+      background: #12a885;
+      color: #e1e3e8;
+    }
+
+    button.copy-btn:focus {
+      outline: none;
+      box-shadow: 0 0 8px #12a885;
+    }
+
+    /* Tooltip */
+    .tooltip-text {
+      position: absolute;
+      top: -32px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #12a885;
+      color: #12141f;
+      font-size: 0.8rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      font-weight: 600;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    .tooltip-show {
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: #5e6c85;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .container {
+        padding: 2rem 1.2rem;
+      }
+      a.script-btn, button.copy-btn {
+        font-size: 0.95rem;
+        padding: 0.85rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-label="Roblox Scripts by xec Scripts">
+    <h1 class="logo">xec Scripts</h1>
+    <p class="tagline">Your professional Roblox script hub — scripts, cheats, and more.</p>
+
+    <section aria-label="Roblox scripts">
+      <div class="script-row">
+        <a href="https://raw.githubusercontent.com/xecScripts/RobloxScripts/main/SilentAim.lua" class="script-btn" target="_blank" rel="noopener noreferrer" title="Open Silent Aim Script">Silent Aim Script</a>
+        <button class="copy-btn" data-url="https://raw.githubusercontent.com/xecScripts/RobloxScripts/main/SilentAim.lua" aria-label="Copy Silent Aim Script loadstring command">
+          Copy
+          <span class="tooltip-text" role="tooltip">Copied!</span>
+        </button>
+      </div>
+
+      <div class="script-row">
+        <a href="https://raw.githubusercontent.com/xecScripts/RobloxScripts/main/Aimbot.lua" class="script-btn" target="_blank" rel="noopener noreferrer" title="Open Aimbot Script">Aimbot Script</a>
+        <button class="copy-btn" data-url="https://raw.githubusercontent.com/xecScripts/RobloxScripts/main/Aimbot.lua" aria-label="Copy Aimbot Script loadstring command">
+          Copy
+          <span class="tooltip-text" role="tooltip">Copied!</span>
+        </button>
+      </div>
+
+      <div class="script-row">
+        <a href="https://raw.githubusercontent.com/xecScripts/RobloxScripts/main/ESP.lua" class="script-btn" target="_blank" rel="noopener noreferrer" title="Open ESP Script">ESP Script</a>
+        <button class="copy-btn" data-url="https://raw.githubusercontent.com/xecScripts/RobloxScripts/main/ESP.lua" aria-label="Copy ESP Script loadstring command">
+          Copy
+          <span class="tooltip-text" role="tooltip">Copied!</span>
+        </button>
+      </div>
+
+      <div class="script-row">
+        <a href="https://discord.gg/xecScripts" class="script-btn" target="_blank" rel="noopener noreferrer" title="Join xec Scripts Discord">Join Discord</a>
+        <button class="copy-btn" data-url="https://discord.gg/xecScripts" aria-label="Copy Discord invite link">
+          Copy
+          <span class="tooltip-text" role="tooltip">Copied!</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="footer">&copy; 2025 xec Scripts</div>
+  </main>
+
+  <script>
+    // Copy loadstring or URL to clipboard with tooltip feedback
+    const copyButtons = document.querySelectorAll('.copy-btn');
+
+    copyButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const url = btn.dataset.url.trim();
+        let textToCopy;
+
+        // Check if URL looks like a Roblox script (.lua or raw GitHub/pastebin)
+        if (url.endsWith('.lua') || url.includes('raw.githubusercontent.com') || url.includes('pastebin.com/raw')) {
+          textToCopy = `loadstring(game:HttpGet("${url}"))()`;
+        } else {
+          textToCopy = url;
+        }
+
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          // Show tooltip
+          const tooltip = btn.querySelector('.tooltip-text');
+          tooltip.classList.add('tooltip-show');
+
+          // Hide tooltip after 1.5 seconds
+          setTimeout(() => {
+            tooltip.classList.remove('tooltip-show');
+          }, 1500);
+        }).catch(() => {
+          alert('Failed to copy! Please copy manually.');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
